@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { withAuthenticator } from 'aws-amplify-react';
+import '@aws-amplify/ui-react/styles.css';
 import { createTodo } from './graphql/mutations';
 import { listTodos } from './graphql/queries';
 
 import { ListTodosQuery, CreateTodoInput } from './API';
 
 import awsExports from './aws-exports';
-import { formatDiagnosticsWithColorAndContext } from 'typescript';
-import { GraphQLResult } from 'aws-amplify/node_modules/@aws-amplify/api-graphql';
+import { GraphQLResult } from '@aws-amplify/api';
 Amplify.configure(awsExports)
 
 /**
@@ -81,12 +81,12 @@ const App = () => {
       <button style={styles.button} onClick={addTodo}>
         Create Todo
       </button>
-      {todos.map((todo, index) => {
+      {todos.map((todo, index) => (
         <div key={todo.id ? todo.id : index} style={styles.todo}>
           <p style={styles.todoName}>{todo.name}</p>
           <p style={styles.todoDescription}>{todo.description}</p>
         </div>
-      })}
+      ))}
     </div>
   )
 }
@@ -115,4 +115,4 @@ const styles: {
   },
 };
 
-export default App;
+export default withAuthenticator(App);

@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
-<<<<<<< HEAD
-import { withAuthenticator } from 'aws-amplify-react';
-=======
 import { withAuthenticator } from '@aws-amplify/ui-react';
->>>>>>> fd989d7fcb48903d40ae101a5a713de204981d1f
 import '@aws-amplify/ui-react/styles.css';
 import { createTodo } from './graphql/mutations';
 import { listTodos } from './graphql/queries';
@@ -12,11 +8,7 @@ import { listTodos } from './graphql/queries';
 import type { ListTodosQuery, CreateTodoInput } from './API';
 
 import awsExports from './aws-exports';
-<<<<<<< HEAD
-import { GraphQLResult } from '@aws-amplify/api';
-=======
 import type { GraphQLResult } from '@aws-amplify/api'
->>>>>>> fd989d7fcb48903d40ae101a5a713de204981d1f
 Amplify.configure(awsExports)
 
 /**

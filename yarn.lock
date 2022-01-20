@@ -3,20 +3,6 @@
 
 
 "@apideck/better-ajv-errors@^0.3.1":
-<<<<<<< HEAD
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@apideck/better-ajv-errors/-/better-ajv-errors-0.3.2.tgz#cd6d3814eda8aee38ee2e3fa6457be43af4f8361"
-  integrity sha512-JdEazx7qiVqTBzzBl5rolRwl5cmhihjfIcpqRzIZjtT6b18liVmDn/VlWpqW4C/qP2hrFFMLRV1wlex8ZVBPTg==
-  dependencies:
-    json-schema "^0.4.0"
-    jsonpointer "^5.0.0"
-    leven "^3.1.0"
-
-"@aws-amplify/analytics@5.1.10":
-  version "5.1.10"
-  resolved "https://registry.yarnpkg.com/@aws-amplify/analytics/-/analytics-5.1.10.tgz#3f09d17ff9d52e3bc45c6447594be51396d3cf0f"
-  integrity sha512-vZgnqsDJuaNVfdEN8xppGtsRbbf57x1y++1wZb59WHT674jg9Ch9gLVvs8FuxcHd0K5Tt6NfEJ/b0qdhdnyUzA==
-=======
   "integrity" "sha512-JdEazx7qiVqTBzzBl5rolRwl5cmhihjfIcpqRzIZjtT6b18liVmDn/VlWpqW4C/qP2hrFFMLRV1wlex8ZVBPTg=="
   "resolved" "https://registry.npmjs.org/@apideck/better-ajv-errors/-/better-ajv-errors-0.3.2.tgz"
   "version" "0.3.2"
@@ -44,7 +30,6 @@
   "integrity" "sha512-vZgnqsDJuaNVfdEN8xppGtsRbbf57x1y++1wZb59WHT674jg9Ch9gLVvs8FuxcHd0K5Tt6NfEJ/b0qdhdnyUzA=="
   "resolved" "https://registry.npmjs.org/@aws-amplify/analytics/-/analytics-5.1.10.tgz"
   "version" "5.1.10"
->>>>>>> fd989d7fcb48903d40ae101a5a713de204981d1f
   dependencies:
     "@aws-amplify/cache" "4.0.32"
     "@aws-amplify/core" "4.3.12"

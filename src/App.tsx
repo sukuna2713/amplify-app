@@ -8,7 +8,7 @@ import { listTodos } from './graphql/queries';
 import type { ListTodosQuery, CreateTodoInput } from './API';
 
 import awsExports from './aws-exports';
-import type { GraphQLResult } from '@aws-amplify/api'
+import { GraphQLResult } from '@aws-amplify/api'
 Amplify.configure(awsExports)
 
 /**
